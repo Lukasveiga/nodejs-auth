@@ -1,0 +1,57 @@
+### Admin - Read Users
+GET http://localhost:3000/admin/users?role=admin
+Accept: application/json
+
+###
+
+### Admin - Update Users
+PUT http://localhost:3000/admin/users?role=admin
+Accept: application/json
+
+###
+
+### Admin - Delete Users
+DELETE http://localhost:3000/admin/users?role=admin
+Accept: application/json
+
+###
+
+### Admin - Manage Settings
+GET http://localhost:3000/admin/settings?role=admin
+Accept: application/json
+
+###
+
+### Assistent - Read Users
+GET http://localhost:3000/admin/users?role=assistent
+Accept: application/json
+
+###
+
+### Assistent - Update Users
+PUT http://localhost:3000/admin/users?role=assistent
+Accept: application/json
+
+###
+
+### Assistent - Delete Users (Should be forbidden)
+DELETE http://localhost:3000/admin/users?role=assistent
+Accept: application/json
+
+###
+
+### Assistent - Manage Settings (Should be forbidden)
+GET http://localhost:3000/admin/settings?role=assistent
+Accept: application/json
+
+###
+
+### Guest - Read Users (Should be forbidden)
+GET http://localhost:3000/admin/users?role=guest
+Accept: application/json
+
+###
+
+### Guest - Read Report (Should be allowed)
+GET http://localhost:3000/admin/reports?role=guest
+Accept: application/json
